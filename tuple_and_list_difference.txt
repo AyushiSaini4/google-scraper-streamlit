@@ -1,0 +1,17 @@
+def run():
+    import streamlit as st
+    st.subheader("📋 List vs Tuple in Python")
+
+    st.markdown("""
+| Feature                   | List                                | Tuple                                   |
+|---------------------------|-------------------------------------|-----------------------------------------|
+| **Mutability**            | ✅ Mutable                          | ❌ Immutable                             |
+| **Syntax**                | `[]` Square brackets                | `()` Parentheses                         |
+| **Mixed Types**           | ✅ Yes                              | ✅ Yes                                   |
+| **Memory Usage**          | Higher (dynamic size)              | Lower (compact structure)               |
+| **Performance**           | Slower                             | Faster (especially in iteration)        |
+| **Available Methods**     | Many (`append()`, `remove()`, etc.)| Few (`count()`, `index()`)              |
+| **Use Case**              | When data **changes**              | When data is **constant**               |
+| **Usable as Dict Key**    | ❌ No (not hashable)               | ✅ Yes (if elements are hashable)        |
+| **Indexing/Slicing**      | ✅ Yes                              | ✅ Yes                                   |
+    """)
